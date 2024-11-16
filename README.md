@@ -19,7 +19,6 @@ Full adder is a digital circuit used to calculate the sum of three binary bits. 
 Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin 
 
 Carry = AB + ACin + BCin
-
 ![image](https://github.com/naavaneetha/FULL_ADDER_SUBTRACTOR/assets/154305477/0f30ba51-5ffb-4198-845f-18e054f675e7)
 **Truthtable**
 ![Screenshot 2024-11-01 190101](https://github.com/user-attachments/assets/6a9aea0c-c36a-4b0d-93a5-9e07d3945e06)
@@ -39,10 +38,9 @@ Borrow out = A'Bin + A'B + BBin
 ![Screenshot 2024-11-01 190345](https://github.com/user-attachments/assets/d82e8068-3d39-41b9-8c4b-389c331340ee)
 
 **Program:**
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. 
+``` 
 Developed by:Harish Kumar S
 RegisterNumber:24010415
-*/
 module unit22(sum,cout,a,b,cin);
 output sum;
 output cout;
@@ -73,7 +71,7 @@ assign w3=(~w1&bin);
 assign df=w1^bin;
 assign bo=w2|w3;
 endmodule
-
+```
 **RTL Schematic**
 ![Screenshot 2024-11-01 192317](https://github.com/user-attachments/assets/9131932c-265e-42eb-adb1-ae205e8d2a43)
 ![Screenshot 2024-11-01 191934](https://github.com/user-attachments/assets/5d940cf5-74b3-4b04-a1ae-2a02f6c8b5e5)
